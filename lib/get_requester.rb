@@ -16,6 +16,9 @@ def get_response_body
 end
 
 def parse_json
-end 
+  programs = JSON.parse(self.get_programs)
+  programs.collect do |program|
+    program["agency"]  
+end
 
 end
