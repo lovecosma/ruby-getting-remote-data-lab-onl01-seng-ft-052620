@@ -20,6 +20,7 @@ def parse_json
   @programs.collect do |program|
   program["key"]
 end
+return @programs
 end
 
 end
